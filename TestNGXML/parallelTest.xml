@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel API Test Suite" guice-stage="QA" Parallel= "tests" thread-count ="2">
+  <test  name="Login API Test">
+    <classes>
+      <class name="com.api.tests.LoginAPITest">
+      </class> 
+    </classes>
+  </test> 
+
+
+    <test  name="Create JOB API Test">
+    <classes>
+      <class name="com.api.tests.CreateJobAPITest">
+      </class> 
+    </classes>
+  </test> 
+</suite>
