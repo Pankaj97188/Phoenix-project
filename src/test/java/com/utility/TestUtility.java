@@ -42,7 +42,7 @@ public class TestUtility {
 		 */
 
 		File configFile = new File(
-				"C:\\Users\\Admin\\Desktop\\Batches\\PhoenixAutomationFramework-Aug\\config\\" + env + ".properties");
+				System.getProperty("user.dir")+"\\config\\" + env + ".properties");
 		FileReader fileReader = null;
 		Properties properties = new Properties(); // Read Propetities
 
@@ -76,7 +76,7 @@ public class TestUtility {
 //		
 //		env.valueOf("QA"); //ENUM
 		File configFile = new File(
-				"C:\\Users\\Admin\\Desktop\\Batches\\PhoenixAutomationFramework-Aug\\config\\" + env + ".properties");
+				System.getProperty("user.dir")+"\\config\\" + env + ".properties");
 		FileReader fileReader = null;
 		Properties properties = new Properties(); // Read Propetities
 
@@ -134,7 +134,7 @@ public class TestUtility {
 	public static String readJsonFile(Env env, String keyName) {
 		// RA
 		File file = new File(
-				"C:\\Users\\Admin\\Desktop\\Batches\\PhoenixAutomationFramework-Aug\\data\\" + env + ".json");
+				System.getProperty("user.dir")+"\\data\\" + env + ".json");
 
 		JsonPath jsonPath = new JsonPath(file);
 

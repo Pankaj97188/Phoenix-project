@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.constants.Env;
@@ -13,6 +14,7 @@ import static com.utility.TestUtility.*;
 
 import io.restassured.response.Response;
 
+@Listeners(com.listeners.APITestListener.class)
 public class LoginAPITest {
 	
 	
