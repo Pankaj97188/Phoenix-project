@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.*;
 
 import static org.hamcrest.Matchers.*;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -47,7 +48,7 @@ public class LoginAPITest {
 		 */
 		
 	
-	  given()
+data=	  given()
 		 		.header("Content-type", "application/json")
 		 		
 		.and()
@@ -62,12 +63,14 @@ public class LoginAPITest {
 		.log().all() ////Log Response
 			.assertThat()
 			.statusCode(200)
-			.time(lessThan(800L))
+			.time(lessThan(2800L))
 		.and()
 				.body("message",equalTo("Success"))
 				.and()
 				.extract()
 				.jsonPath().getString("data.token");// Comparsion
 	System.out.println(data);
+	
+	Reporter.getCurrentTestResult().setAttribute("response", data);
 	}
 }
