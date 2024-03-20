@@ -13,6 +13,7 @@ import com.constants.Component;
 import com.constants.TestType;
 
 public class Runner {
+	
 //This is a very Important feature for your Framework!!!
 // USP J
 	public static void main(String[] args) {
