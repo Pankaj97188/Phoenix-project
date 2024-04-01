@@ -1,21 +1,22 @@
 package com.api.tests;
 
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.*; //in RA all methods are stattic
 
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.*; // What is hamcrest --->Matchers in your Frameworks?? Matchers (Class) unit tests [range check]
 
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.constants.Env;
-import com.pojo.LoginRequestPOJO;
-import static com.utility.TestUtility.*;
+import com.constants.Env; //Enums?? Class store Constants?? 3[properties, enum, Interface]
+import com.pojo.LoginRequestPOJO; // Design Pattern POJO [ encapsultation, transfer pojo design ----> POJO --- JSON (Serialization
+// Gson 
+import static com.utility.TestUtility.*; //Reusable [read file prop, json, tokens TU]
 
 import io.restassured.response.Response;
 
-@Listeners(com.listeners.APITestListener.class)
+@Listeners(com.listeners.APITestListener.class) //Listeners ---- ITestListeners
 public class LoginAPITest {
 	
 	

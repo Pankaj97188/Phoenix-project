@@ -9,6 +9,79 @@
 		<packages>
 			<package name="com.api.tests"></package>
 		</packages>
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
 		</test>
+
+     <test name="API Tests">
+	
+		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+		</test>
+
+
+
+     <test name="API Tests">
+	
+		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+
+
+    		<packages>
+			<package name="com.api.tests"></package>
+		</packages>
+		</test>
+
+
+    
 
 </suite>
