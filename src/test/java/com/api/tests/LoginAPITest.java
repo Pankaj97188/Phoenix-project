@@ -38,6 +38,7 @@ public class LoginAPITest {
 	 */
 	@Test(description = "Verify if the FD is able to Login using Login API", groups ={"sanity", "smoke", "api"} , retryAnalyzer = com.listeners.ReTestListener.class)
 	public void loginAPITest() {
+		//JOB of the retry analyzer re run falky test!!!
 		
 		String a[] = {"abc", "pe"};
 		/*Small 

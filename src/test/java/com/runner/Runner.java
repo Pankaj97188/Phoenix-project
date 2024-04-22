@@ -30,7 +30,7 @@ public class Runner {
 
 		XmlSuite xmlSuite = new XmlSuite();
 		xmlSuite.setName(component + " " + testType + "Suite");// suite name="All API Test Suite
-		xmlSuite.setParallel(ParallelMode.TESTS); // Parallel= "tests"
+		xmlSuite.setParallel(ParallelMode.TESTS); // Parallel= "tests" ********** VIMP
 		xmlSuite.setThreadCount(2); // thread-count ="2"
 //<suite name="All API Test Suite" guice-stage="QA" Parallel= "tests" thread-count ="2">
 
