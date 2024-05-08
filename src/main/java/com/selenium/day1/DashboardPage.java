@@ -18,7 +18,6 @@ public class DashboardPage extends BrowserUtil {
 	}
 	public String getUserName() {
 		// TestStep
-		sleepFor(5);
 		clickOn(USER_ICON_BUTTON_LOCATOR);
 		String data = getVisibileText(USER_NAME_LOCATOR);
 		return data;

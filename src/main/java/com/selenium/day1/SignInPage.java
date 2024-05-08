@@ -26,7 +26,7 @@ public final class SignInPage extends BrowserUtil {
 	public SignInPage(Browser browser) {
 		super();//
 		launchBrowser(browser);
-		goToWebSite("http://phoenix.testautomationacademy.in/sign-in");
+		goToWebSite("http://phoenix.techwithjatin.com");
 
 	}
 

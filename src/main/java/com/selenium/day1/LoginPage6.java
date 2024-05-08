@@ -6,7 +6,7 @@ public class LoginPage6 {
 public static void main(String[] args) {
 	
 	SignInPage signInPage = new SignInPage(Browser.CHROME);
-	String data=  signInPage.doSignInWith("iamsup", "password").getUserName();
+	String data=  signInPage.doSignInWith("iamfd", "password").getUserName();
 	System.out.println(data);
 }
 }
