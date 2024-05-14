@@ -1,6 +1,7 @@
 package com.utility;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.selenium.day1.CreateJobTable;
+import com.selenium.day1.PhoenixLocator;
 
 public abstract class BrowserUtil {
 	/*
@@ -88,6 +92,19 @@ public abstract class BrowserUtil {
 
 	public WebDriver getWd() {
 		return wd;
+	}
+
+	public CreateJobTable getAllElements(By locator) {
+		// wd.findElements(locator);
+		WebElement tableElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+		WebElement rowElement = wait.until(ExpectedConditions.visibilityOfElementLocated(PhoenixLocator.locateByXPATH("//mat-row")));
+		List<WebElement> cellList = rowElement.findElements(PhoenixLocator.locateByXPATH("//mat-cell"));
+
+		CreateJobTable data = new CreateJobTable(cellList.get(0).getText(), cellList.get(1).getText(),
+				cellList.get(2).getText(), cellList.get(3).getText(), cellList.get(4).getText(),
+				cellList.get(5).getText(), cellList.get(6).getText());
+		return data;
 	}
 
 }
