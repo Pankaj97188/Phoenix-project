@@ -10,7 +10,7 @@ import com.utility.BrowserUtil;
 public class GetDataFromPage2 {
 
 	public static void main(String[] args) {
-		BrowserUtil util = new BrowserUtil();
+		Browser b = new Browser();
 		util.launchBrowser(Browser.CHROME);
 		util.goToWebSite("https://www.google.com");
 		util.maximizeTheWindow();
